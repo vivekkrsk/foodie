@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* CSS Variable */
+:root{
+    --navbar-height: 60px;
+    --gradient: linear-gradient(
+      45deg,
+      #845ec2,
+      #d65db1,
+      #ff6f91,
+      #ff9671,
+      #ffc75f,
+      #f9f871,
+
+    );
+}
+
+#logo{
+  width: 13%;
+}
+    
+#logo img{
+  width: 41%;
+  border: 4px solid white;
+  border-radius: 49%;
+  
+  margin: 10px 20px 10px 50px 
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    position: sticky;
+}
+
+#navbar ul{
+   display: flex;
+   font-family: 'Fredoka One', cursive;
+}
+
+#navbar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    color: white;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none; 
+}
+
+#navbar ul li a:hover{
+  color: black;
+  background-color: white;
+}
+
+/* Home Section */
+
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before{
+  content: "";
+  background: url(home2.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1{
+  color: white;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+}
+
+#home p{
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Bree Serif', serif;
+}
+
+/* Services Sction */
+#services1{
+  margin: 34px;
+  display: flex;
+
+}
+#services1 .box{
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 25px 2px;
+  border-radius: 28px;
+  background: #e3d8d8;
+}
+#services1 .box img{
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+
+#services1 .box{
+  font-family: 'Bree Serif', serif;
+}
+
+#services2{
+  margin: 34px;
+  display: flex;
+
+}
+#services2 .box{
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 25px 2px;
+  border-radius: 28px;
+  background: #e3d8d8;
+}
+#services2 .box img{
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+
+#services2 .box{
+  font-family: 'Bree Serif', serif;
+}
+
+/* Client Section */
+
+#client-section{
+  height: 344px;
+}
+#client-section::before{
+  content: "";
+  position: absolute;
+  background-image: url(home1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgb(33, 160, 192); */
+  width: 100%;
+  height: 343px;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0.9;
+  
+}
+
+#client{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+#client-item{
+  padding: 34px;
+}
+
+#client img{
+  height: 124px;
+  padding: 34px;
+
+}
+
+/* Contact Section */
+
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  background: url('contact.jpg') no-repeat center center/cover;
+  border-radius: 10px;
+}
+
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+  font-family: 'Bree Serif', serif;
+}
+
+#contact-box form{
+  width: 30%;
+  font-size: 1.3rem;
+  font-family: 'Bree Serif', serif;
+  
+}
+
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Utility Classes */
+
+.h-primary{
+  font-size: 3.8rem;
+  padding: 12px;
+  font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+  font-size: 2.3rem;
+  padding: 12px;
+  font-family: 'Bree Serif', serif;
+}
+
+.btn{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Fredoka One', cursive;
+}
+
+.btn:hover{
+  background-color: rgba(209, 25, 86, 0.719);
+  transition: 1s;
+  color: black;
+  
+}
+
+.center{
+  text-align: center;
+}
