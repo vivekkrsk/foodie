@@ -166,7 +166,7 @@ html{
 #client-section::before{
   content: "";
   position: absolute;
-  background-image: url(home1.jpg);
+  background-image: var(--gradient);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-color: rgb(33, 160, 192); */
